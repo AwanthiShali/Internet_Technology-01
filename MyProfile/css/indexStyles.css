@@ -1,5 +1,9 @@
+body{
+    overflow-x: hidden;
+    height: max-content;
+}
 body div.background-image{
-    background-image: url("../assest/background.jpg");
+    background-image: url("../assest/images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -34,7 +38,7 @@ nav>ul {
     position: absolute;
     display: inline;
 }
-nav>ul>li a {
+nav>ul>li>a {
     display: inline;
     color: black;
     text-align: center;
@@ -45,29 +49,32 @@ nav>ul>li a {
     font-size: 20px;
     font-family: Tahoma;
 }
-nav>ul>li:nth-child(1){
-    position: absolute;
-    left: 50px;
-}
-nav>ul>li:nth-child(2){
+nav>ul>li>a.home{
     position: absolute;
     left: 150px;
+    background-color: #F69400;
+    height: 70px;
+    opacity: 60%;
 }
-nav>ul>li:nth-child(3){
+nav>ul>li>a.about{
     position: absolute;
     left: 250px;
 }
-nav>ul>li:nth-child(4){
+nav>ul>li>a.service{
     position: absolute;
-    left: 370px;
+    left: 350px;
 }
-nav>ul>li:nth-child(5){
+nav>ul>li>a.blog{
     position: absolute;
-    left: 450px;
+    left: 470px;
+}
+nav>ul>li>a.skill{
+    position: absolute;
+    left: 550px;
 }
 nav>ul>li a:hover {
     background-color: #F69400;
-    opacity: 40%;
+    opacity: 60%;
     transition-duration: 2s;
     height: 70px;
 }
@@ -95,7 +102,7 @@ nav>a.link>img{
     position: absolute;
     right: 300px;
 }
-nav>label.contact{
+nav>a.whatsapp>label.contact{
     color: black;
     font-size: 25px;
     font-family: Tahoma;
@@ -104,12 +111,12 @@ nav>label.contact{
     position: absolute;
     right: 90px;
 }
-nav>label.contact>img.down{
+nav>a.whatsapp>label.contact>img.down{
     width: 34.88px;
     height: 36.88px;
     position: absolute;
 }
-nav>label.contact:hover{
+nav>a.whatsapp>label.contact:hover{
     background-color: #F69400;
     opacity: 40%;
     transition-duration: 2s;
@@ -170,4 +177,136 @@ section>article>div.ASE{
     bottom: 230px;
     left: 290px;
 }
-
+section>article>a>label.download{
+    width: 210px;
+    height: 33px;
+    font-family: Tahoma;
+    font-size: 27px;
+    color: #F69400;
+    position: absolute;
+    bottom: -40px;
+    left: 90px;
+}
+section>article>a>img.download{
+    width: 37px;
+    height: 29px;
+    position: absolute;
+    bottom: -40px;
+    left: 40px;
+}
+section>article>a>label.download:hover{
+    cursor: pointer;
+}
+section>article>a>img.download{
+    cursor: pointer;
+}
+section>div.education{
+    position: absolute;
+    right: 500px;
+}
+section>div.education>label.edu{
+    width: 156px;
+    height: 43px;
+    font-size: 36px;
+    font-family: Tahoma;
+    color: black;
+    position: absolute;
+    bottom: 150px;
+    left: 150px;
+}
+section>div.education>img{
+    position: absolute;
+    left: 50px;
+    bottom: -200px;
+    width: 268px;
+    height: 331px;
+}
+section>div.education>label.clickhere{
+    border-radius: 5px;
+    padding: 14px 28px;
+    font-size: 30px;
+    font-family: Tahoma;
+    cursor: pointer;
+    border: 2px #F69400;
+    color: #F69400;
+    position: absolute;
+    left: 320px;
+    bottom: -60px;
+}
+section>div.education>label.clickhere:hover{
+    border-color: #F69400;
+    color: black;
+    background-color: #F69400;
+    transition: 1.5s;
+}
+body>div.modal{
+    display: none;
+    position: absolute;
+    left: 780px;
+    top: 160px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: auto;
+    height:auto;
+    overflow: auto;
+    background-color: #2b2b2b;
+}
+body>div.modal>div.modal-content{
+    font-size: 30px;
+    font-family: Tahoma;
+    color: #F69400;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+body>div.modal>div.modal-content>span.close{
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+body>div.modal>div.modal-content>span.close:hover,
+body>div.modal>div.modal-content>span.close:focus{
+    color: darkgray;
+    text-decoration: none;
+    cursor: pointer;
+}
+body>div.skills>label.my_skills{
+    font-family: Tahoma;
+    font-size: 30px;
+    position:absolute;
+    top: 550px;
+}
+body>div.skills{
+    box-sizing: border-box;
+    font-family: Tahoma;
+    font-size: 28px;
+}
+body>div.skills>div.container{
+    width: 50%;
+    background-color: #ddd;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+body>div.skills>div.container>div.skills{
+    text-align: right;
+    color: black;
+}
+body>div.skills>div.container>div.html{
+    width: 90%;
+    background-color: #F6B7DD;
+}
+body>div.skills>div.container>div.css{
+    width: 80%;
+    background-color: #F156D7;
+}
+body>div.skills>div.container>div.js{
+    width: 65%;
+    background-color: #B91FB9;
+}
+body>div.skills>div.container>div.java{
+    width: 85%;
+    background-color: #5D0F5A;
+}
